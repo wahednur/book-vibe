@@ -1,0 +1,70 @@
+.book-card {
+  border-radius: 16px;
+  border: 1px solid rgba(19, 19, 19, 0.15);
+  padding: 24px;
+}
+.book-image {
+  width: 100%;
+  aspect-ratio: 1.4;
+  border-radius: 16px;
+  background: #f3f3f3;
+  padding: 56px 80px;
+}
+.book-image img {
+  aspect-ratio: 0.8;
+}
+.tags span {
+  padding: 7px 16px;
+  gap: 10px;
+  border-radius: 30px;
+  background: rgba(35, 190, 10, 0.05);
+  color: #23be0a;
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  gap: 20px;
+}
+.tags {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.book-info .title {
+  color: #131313;
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 20px;
+}
+.author {
+  color: rgba(19, 19, 19, 0.8);
+
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 16px;
+}
+.hr {
+  border-style: dashed;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: initial;
+  display: block;
+}
+.cat-rat {
+  color: rgba(19, 19, 19, 0.8);
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
