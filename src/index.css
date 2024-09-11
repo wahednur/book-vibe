@@ -10,6 +10,7 @@
   align-items: center;
   gap: 10px;
   border-radius: 8px;
+  transition: all ease-in-out 0.3s;
 }
 .btn-green {
   background: #23be0a;
@@ -21,4 +22,34 @@
   font-weight: 700;
   line-height: normal;
   margin-top: 48px;
+}
+.btn-outline {
+  display: inline-flex;
+  padding: 18px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(19, 19, 19, 0.3);
+}
+.btn-sky {
+  display: inline-flex;
+  padding: 18px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 8px;
+  background: #50b1c9;
+}
+.btn-outline:hover,
+.btn-sky:hover {
+  background: #23be0a;
+  color: #fff;
 }

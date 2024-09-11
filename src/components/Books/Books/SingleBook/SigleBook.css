@@ -1,0 +1,28 @@
+.tag {
+  border-radius: 30px;
+  background: rgba(35, 190, 10, 0.05);
+  color: #23be0a;
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 7px 16px;
+}
+.intro {
+  color: rgba(19, 19, 19, 0.7);
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.intro strong {
+  color: #131313;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 162.5% */
+}
