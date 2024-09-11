@@ -1,7 +1,9 @@
+import HomeSlider from "../components/Slider/HomeSlider/HomeSlider";
+
 const HomePage = () => {
   return (
     <div>
-      <h1 className="text-3xls">From Home Page</h1>
+      <HomeSlider />
     </div>
   );
 };

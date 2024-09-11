@@ -1,0 +1,29 @@
+.mbl-nav li a {
+  padding: 14px 20px;
+}
+.mbl-nav li a.active {
+  border-radius: 8px;
+  border: 1px solid #23be0a;
+}
+
+@media screen and (max-width: 992px) {
+  .mbl-nav {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    text-align: right;
+    z-index: 10;
+    background-color: #23be0a;
+    float: right;
+  }
+  .mbl-nav li a {
+    padding: 10px 20px;
+    float: right;
+    width: 100%;
+  }
+  .mbl-nav li a:hover,
+  .mbl-nav li a.active {
+    background-color: #59c6d2;
+    color: white;
+  }
+}
