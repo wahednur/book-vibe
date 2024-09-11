@@ -1,5 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import "./SigleBook.css";
+import { saveRedBooks } from "../../../../utility/localStorage";
+
 const SingleBook = () => {
   const books = useLoaderData();
   const { id } = useParams();
@@ -16,8 +18,10 @@ const SingleBook = () => {
     tags,
     publisher,
     year_of_publishing,
-    price,
   } = book;
+  const handleReadBooks = () => {
+    saveRedBooks(inId);
+  };
 
   return (
     <div className="container mx-auto my-[100px]">
@@ -51,7 +55,9 @@ const SingleBook = () => {
             <p>Rating:</p> <strong>{rating}</strong>
           </div>
           <div className="flex gap-3 mt-4">
-            <button className="btn btn-outline">Read</button>
+            <button onClick={handleReadBooks} className="btn btn-outline">
+              Read
+            </button>
             <button className="btn btn-sky">Wishlist</button>
           </div>
         </div>
