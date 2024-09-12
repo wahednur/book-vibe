@@ -27,25 +27,25 @@ export const router = createBrowserRouter([
           {
             index: true,
             path: "read-books",
-            loader: () => fetch("/public/books.json"),
+            loader: () => fetch("/books.json"),
             element: <ReadBooks />,
           },
           {
             path: "wishlist-books",
-            loader: () => fetch("/public/books.json"),
+            loader: () => fetch("/books.json"),
             element: <WishBooks />,
           },
         ],
       },
       {
         path: "/read-page",
-        loader: () => fetch("/public/books.json"),
+        loader: () => fetch("/books.json"),
         element: <PageToRead />,
       },
 
       {
         path: "/books/:id",
-        loader: () => fetch("/public/books.json"),
+        loader: () => fetch("/books.json"),
         element: <SingleBook />,
       },
       {
