@@ -8,7 +8,7 @@ const HomeSlider = () => {
           <h1 className="text-2xl md:text-4xl lg:text-[56px] font-bold font-playfair">
             Books to freshen up your bookshelf
           </h1>
-          <Link to="/listed-book" className="btn btn-green">
+          <Link to="/listed-book/read-books" className="btn btn-green">
             View The List
           </Link>
         </div>
