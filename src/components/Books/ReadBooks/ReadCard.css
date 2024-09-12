@@ -1,0 +1,43 @@
+.rd-card {
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(19, 19, 19, 0.15);
+}
+.read-card h1 {
+  color: #131313;
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.read-card p {
+  color: rgba(19, 19, 19, 0.8);
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.read-card .tag {
+  border-radius: 30px;
+  background: rgba(35, 190, 10, 0.05);
+  color: #23be0a;
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.read-card .btn-green {
+  border-radius: 30px;
+  background: #23be0a;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0;
+}

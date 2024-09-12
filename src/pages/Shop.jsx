@@ -1,7 +1,9 @@
+import BookShop from "../components/Shop/BookShop";
+
 const Shop = () => {
   return (
     <div>
-      <h1 className="text-3xl">From Shop page</h1>
+      <BookShop />
     </div>
   );
 };
