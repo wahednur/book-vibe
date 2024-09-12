@@ -17,6 +17,7 @@ const saveRedBooks = (id) => {
   storeReadBooks.push(id);
   //   deleteWishlistBooks(id);
   saveWishlistBooks(id);
+  deleteWishlistBooks(id);
   localStorage.setItem("read-books", JSON.stringify(storeReadBooks));
   toast.success("Book added to read list");
 };
@@ -33,10 +34,13 @@ const saveWishlistBooks = (id) => {
   const storeWishlistBooks = getWishlistBooks();
   const exists = storeWishlistBooks.find((bookId) => bookId === id);
   const crossCheck = getStoredRedBooks().find((bookId) => bookId === id);
-  if (exists || crossCheck) {
+  if (crossCheck) {
+    return toast.error("You have already read this book");
+  }
+  if (exists) {
     return toast.error("You have already added this book to your wishlist");
   }
-
+  storeWishlistBooks.push(id);
   localStorage.setItem("wishlist-books", JSON.stringify(storeWishlistBooks));
   toast.success("Book added to wishlist");
 };
