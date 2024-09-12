@@ -1,6 +1,9 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import "./SigleBook.css";
-import { saveRedBooks } from "../../../../utility/localStorage";
+import {
+  saveRedBooks,
+  saveWishlistBooks,
+} from "../../../../utility/localStorage";
 
 const SingleBook = () => {
   const books = useLoaderData();
@@ -21,6 +24,9 @@ const SingleBook = () => {
   } = book;
   const handleReadBooks = () => {
     saveRedBooks(inId);
+  };
+  const handleWishlistBooks = () => {
+    saveWishlistBooks(inId);
   };
 
   return (
@@ -58,7 +64,9 @@ const SingleBook = () => {
             <button onClick={handleReadBooks} className="btn btn-outline">
               Read
             </button>
-            <button className="btn btn-sky">Wishlist</button>
+            <button onClick={handleWishlistBooks} className="btn btn-sky">
+              Wishlist
+            </button>
           </div>
         </div>
       </div>
